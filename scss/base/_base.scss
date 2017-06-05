@@ -1,0 +1,83 @@
+form{
+  position: relative;
+  top: 6rem;
+  left: 27rem;
+  width: 57rem;
+  label{
+    background: #000;
+    display: block;
+    width: 30rem;
+    padding: 0.3rem;
+
+  }
+  input[type="text"]{
+    border: none;
+    background: #D8D8D8;
+    width: 55.4rem;
+    height: 5rem;
+    color:#616161;
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+  button{
+    background: url(../Assets/search.png) right center no-repeat;
+    background-size: 4rem;
+    position: absolute;
+    right: 3rem;
+    top: 2.7rem;
+    border: none;
+    text-indent: -9999px;
+    width: 5rem;
+    height: 5rem;
+  }
+}
+section{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.Rusults{
+  background-color: #000;
+  display: block;
+  padding: 1rem;
+
+}
+.titles{
+  margin: 0 auto;
+  max-width:1000px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+article{
+  background: #000;
+  display:inline-block;
+  margin-bottom:20px;
+  width: 300px;
+  img{
+  width: 300px;
+  height:300px;
+  display:block;
+  }
+  a:nth-of-type(1){
+    color:$click-color;
+    padding-top:10px;
+    font-size:1.5rem;
+  }
+  a{
+    color:gray;
+    text-decoration: none;
+    display:block;
+    padding:10px;
+    padding-top:0;
+    font-size:1.2rem;
+  }
+}
+.btn{
+    padding: 1rem;
+    background-color: $click-color;
+    border-radius: 0.5rem;
+    color:white;
+    margin-bottom: 5rem;
+    margin-left: 45%;
+    display: inline-block;
+}

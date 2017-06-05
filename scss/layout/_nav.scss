@@ -1,0 +1,35 @@
+header{
+  background-image: url(../Assets/concert-photo.jpg);
+  background-repeat: no-repeat;
+  background-position: -1rem -30rem;
+  background-size: 194rem 78rem;
+}
+nav{
+  height: 30rem;
+  max-width: 115rem;
+  margin: 0 auto;
+}
+nav ul{
+  display: inline-block;
+  margin-left: 61rem;
+  margin-top: 0;
+  li{
+    display: inline-block;
+    padding-left: 2rem;
+    a{
+      text-decoration: none;
+      color: $disact;
+      font-size: 2rem;
+    }
+  }
+}
+.logo{
+  display: inline-block;
+  font-weight: bold;
+  color: white;
+  font-size: 2.5rem;
+  img{
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+}

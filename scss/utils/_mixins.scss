@@ -1,0 +1,48 @@
+// ref https://css-tricks.com/examples/ShapesOfCSS/
+
+@mixin triangle-up($width, $height, $color) {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid $color;
+}
+@mixin triangle-left($width, $height, $color) {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-right: 100px solid $color;
+	border-bottom: 50px solid transparent;
+}
+@mixin triangle-right($width, $height, $color) {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-left: 100px solid $color;
+	border-bottom: 50px solid transparent;
+}
+@mixin triangle-topleft($width, $height, $color) {
+	width: 0;
+	height: 0;
+	border-top: 100px solid $color;
+	border-right: 100px solid transparent;
+}
+@mixin triangle-topright($width, $height, $color) {
+	width: 0;
+	height: 0;
+	border-top: 100px solid $color;
+	border-left: 100px solid transparent;
+
+}
+@mixin triangle-bottomleft($width, $height, $color) {
+	width: 0;
+	height: 0;
+	border-bottom: 100px solid $color;
+	border-right: 100px solid transparent;
+}
+@mixin triangle-bottomright($width, $height, $color) {
+	width: 0;
+	height: 0;
+	border-bottom: 100px solid $color;
+	border-left: 100px solid transparent;
+}
