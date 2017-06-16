@@ -2,8 +2,8 @@ const form = document.querySelector('.js-form');
 form.addEventListener('submit', event => {
   event.preventDefault();
   const inputField = document.querySelector('#search');
-  var content = document.querySelector('.content');
-  var inputVal = inputField.value;
+  const content = document.querySelector('.content');
+  const inputVal = inputField.value;
   //inputVal = inputVal;
   let api = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(inputVal)}&limit=10&key=AIzaSyCmsymhfpEYIcNK3uEF7Ld_Xm1a0tt3vPQ`;
   console.log(api)
@@ -16,7 +16,7 @@ form.addEventListener('submit', event => {
     }else{text += `<div class="titles">`
       //variables declared before loop so they aren't being re-made everytime the loop go over it but instead being over writen
       let image, title; //description;
-      for (var i = 0; i < json.items.length; i++) {
+      for (let i = 0; i < json.items.length; i++) {
         title = json.items[i].volumeInfo.title;
         title.substring(0,30);
         let description = json.items[i].volumeInfo.description;
