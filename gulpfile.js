@@ -1,7 +1,7 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var browserSync = require('browser-sync').create();
-var sourcemaps = require('gulp-sourcemaps');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const browserSync = require('browser-sync').create();
+const sourcemaps = require('gulp-sourcemaps');
 
 
 gulp.task('scss', function() {

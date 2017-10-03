@@ -4,15 +4,15 @@ form{
   left: 27rem;
   width: 57rem;
   label{
-    background: #000;
+    background: $black;
     display: block;
     width: 30rem;
     padding: 0.3rem;
 
   }
   input[type="text"]{
-    border: none;
-    background: #D8D8D8;
+    @extend %bnone;
+    background: $white;
     width: 55.4rem;
     height: 5rem;
     color:#616161;
@@ -20,12 +20,14 @@ form{
     padding: 0.5rem;
   }
   button{
-    background: url(../Assets/search.png) right center no-repeat;
+    @include background('../Assets/search.png',right center,no-repeat)
+    // background: url(../Assets/search.png) right center no-repeat;
+    background-color: transparent;
     background-size: 4rem;
     position: absolute;
     right: 3rem;
     top: 2.7rem;
-    border: none;
+    @extend %bnone;
     text-indent: -9999px;
     width: 5rem;
     height: 5rem;
@@ -36,7 +38,7 @@ section{
     margin: 0 auto;
 }
 .Rusults{
-  background-color: #000;
+  background-color: $black;
   display: block;
   padding: 1rem;
 
@@ -50,7 +52,7 @@ section{
 }
 article{
   overflow: hidden;
-  background: #000;
+  background: $black;
   display:inline-block;
   margin-bottom:2rem;
   width: 30rem;
