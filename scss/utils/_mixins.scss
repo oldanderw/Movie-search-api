@@ -6,3 +6,18 @@
         repeat: $repeat;
     }
 }
+// 320px wide up to 1200px wide at all sizes in between.
+@mixin mq($size) {
+	@if $size == small {
+		@media (max-width: 499px) { @content;}
+	}
+	@else if $size == medium {
+		@media screen and (min-width: 500px) and (max-width: 649px) { @content;}
+	}
+	@else if $size == large {
+		@media screen and (min-width: 650px) and (max-width: 999px) {@content;}
+	}
+	@else if $size == extraLarge {
+		@media screen and (min-width:1000px) {@content;}
+	}
+}
